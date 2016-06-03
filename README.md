@@ -2,6 +2,7 @@
 Simple MyBB monthly post counter for post2host forums.
 
 Result:
+
 ![](https://p4v.trk1.pw/count/?uid=224)
 
 You can customize this post counter according to your needs, This is released under GNU GPL V3 and based on an Old post counter created by Transfusion(https://github.com/Transfusion/myBBpostcounter).
