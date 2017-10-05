@@ -19,7 +19,7 @@ $nopointsforums = array(
 
 
 $userpage = file_get_html('https://post4vps.com/user-'.$_GET["uid"].'.html');
-$username = $userpage->find('span[class="largetext"]', 0)->plaintext; // find the username from the user profile page.
+$username = $userpage->find('span[class="largetext protitlemain"]', 0)->plaintext; // find the username from the user profile page.
 $username = rtrim($username, " ");
 if($username == "")die("User not found");
 //refer to http://simplehtmldom.sourceforge.net/manual.htm
