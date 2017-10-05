@@ -3,7 +3,7 @@ if(!$_GET)die("Please use a id with parameter ?uid=youruserid");
 if(!$_GET['uid'])die("Please enter a user id");
 if(!IS_NUMERIC($_GET['uid']))die("Please use numeric id");
 
-include 'simple_html_dom.php';
+include 'advanced_html_dom.php';
 
 $nopointsforums = array(
         'Introduction' => true,
