@@ -56,7 +56,7 @@ while (($numberofpostsnotmadeinthismonth === 0 and $numberofpoststhismonth != 0)
         }
         $html = file_get_html($url.'&sortby=dateline&order=desc&uid=&page='.$pagenumber);
         $rows = 0;
-        foreach($html->find('table[class="tborder"] tr[class="inline_row"]') as $element)
+        foreach($html->find('table.tborder tr.inline_row') as $element)
         {
 
 		// Ignore first two rows.
