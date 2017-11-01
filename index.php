@@ -54,14 +54,14 @@ while (($numberofpostsnotmadeinthismonth === 0 and $numberofpoststhismonth != 0)
         if ($pagenumber === 1) {
                 $firstrun = False;
         }
-        $html = file_get_html($url.'&sortby=dateline&order=desc&uid=&page='.$pagenumber);
+        $html = file_get_html($url.'&sortby=dateline&order=desc&page='.$pagenumber);
         $rows = 0;
         foreach($html->find('table.tborder tr.inline_row') as $element)
         {
 
 		// Ignore first two rows.
                 
-                $post = $element->find('*[style="white-space: nowrap; text-align: center;"]',0);
+                $post = $element->find('*.style="white-space: nowrap; text-align: center;"',0);
                 $forum = $element->find('a', 3)->innertext;
 				
 		// Forum doesn't give points.
